@@ -17,9 +17,9 @@ mvn install:install-file -Dfile=D:\var\tmp\commons-validator-1.9.0.jar -DgroupId
 mvn install -rf :hop-engines-beam
 
 
-
-find /cygdrive/d/app/maven/ -type f -mtime -7 -exec zip -r /cygdrive/d/var/tmp/maven-20250120.zip {} +
-
+cd /cygdrive/d/app/maven/repository
+find /cygdrive/d/app/maven/repository -type f -mtime -7 -exec zip -r /cygdrive/d/var/tmp/maven-20250204.zip {} +
+find . -type f -mtime -7 -exec zip -r /cygdrive/d/var/tmp/maven-20250204.zip {} +
 
 
 

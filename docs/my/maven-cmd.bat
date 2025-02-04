@@ -1,4 +1,5 @@
 set JAVA_HOME=D:\app\jdk-dragonwell-17.0.11.0.12
+set JAVA_HOME=D:\app\jdk-ms-17.0.13
 set PATH=%JAVA_HOME%\bin;%PATH%
 
 cd /d D:\project\z-opensource\hop

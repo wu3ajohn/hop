@@ -108,6 +108,8 @@
         <jacoco-maven-plugin.version>0.8.12</jacoco-maven-plugin.version>
         <jandex.version>3.2.2</jandex.version>
         <java-hamcrest.version>2.0.0.0</java-hamcrest.version>
+        <java.version>17</java.version>
+        <java.version>17</java.version>
         <junit.version>5.10.2</junit.version>
         <license.bundleLicenseFile>META-INF/LICENSE.txt</license.bundleLicenseFile>
         <license.failOnLicenseCheck>false</license.failOnLicenseCheck>
@@ -142,7 +144,11 @@
         <maven-surefire-plugin.testFailureIgnore>false</maven-surefire-plugin.testFailureIgnore>
         <maven.build.timestamp.format>yyyy-MM-dd hh.mm.ss</maven.build.timestamp.format>
         <maven.compiler.source>${target.jdk.version}</maven.compiler.source>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>${target.jdk.version}</maven.compiler.target>
+        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.target>17</maven.compiler.target>
         <mockito-core.version>5.12.0</mockito-core.version>
         <objenesis.version>3.4</objenesis.version>
         <org.eclipse.platform.version>3.128.0</org.eclipse.platform.version>
@@ -251,6 +257,14 @@
             </plugins>
         </pluginManagement>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.13.0</version>
+                <configuration>
+                    <release>17</release>
+                </configuration>
+            </plugin>
             <plugin>
                 <artifactId>maven-release-plugin</artifactId>
                 <configuration>

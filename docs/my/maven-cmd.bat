@@ -22,7 +22,7 @@ find /cygdrive/d/app/maven/repository -type f -mtime -7 -exec zip -r /cygdrive/d
 find . -type f -mtime -7 -exec zip -r /cygdrive/d/var/tmp/maven-20250204.zip {} +
 
 
-
+git bundle create D:\var\tmp\repo-hop.bundle --all
 
 
 $recentFiles = Get-ChildItem -Path "D:\app\maven\" -Recurse | Where-Object { $_.LastWriteTime -gt (Get-Date).AddDays(-7) }
